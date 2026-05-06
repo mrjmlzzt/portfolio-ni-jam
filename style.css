@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     position: relative;
-    background-image: url("pexels-jose-rodriguez-ortega-2189823-32751933.jpg");
+    background-image: url("pexels-jose-rodriguez-ortega-2189823-32751933 (1).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,7 +156,7 @@ body.interests-page {
     margin: 0;
 }
 .home-page {
-    background: url("pexels-jose-rodriguez-ortega-2189823-32751933.jpg");
+    background: url("pexels-jose-rodriguez-ortega-2189823-32751933 (1).jpg");
     background-size: cover;
 }
 #toggle {
