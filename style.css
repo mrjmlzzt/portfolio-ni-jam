@@ -1,0 +1,742 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Chewy&family=Climate+Crisis:YEAR@1979&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Ephesis&family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower&family=Lexend+Giga:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Matemasie&family=Meddon&family=Meow+Script&family=Pinyon+Script&family=WindSong:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    position: relative;
+    background-image: url("pexels-jose-rodriguez-ortega-2189823-32751933.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.ballet {
+    font-family: "Ballet" , cursive;
+    font-size: 200px;
+    font-weight: lighter;
+}
+.item {
+    position: fixed;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+.item p {
+    margin-top: 5px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+.item1 { 
+    left: 85px; 
+    top: 25%; }
+.item2 { 
+    left: 85px; 
+    top: 45%; }
+.item3 { 
+    right: 85px; 
+    top: 45%; }
+.item5 {
+    right: 85px; 
+    top: 65%; }
+.item:hover img {
+    transform: scale(1.2);
+}
+.item:hover p {
+    color: rgb(255, 239, 10);
+    transform: translateY(3px);
+}
+.item:active img {
+    transform: scale(1.1);
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+}
+.nav-left,
+.nav-right {
+   font-family: "lexend Giga", sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.extra-img3 {
+    position: fixed;
+    right: 360px;   
+    top: 60%;     
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+}
+.extra-img2 {
+    position: fixed;
+    left: 230px;   
+    top: 10%;     
+    width: 230px;
+    height: 200px;
+    object-fit: cover;
+}
+.extra-img {
+    position: fixed;
+    right: 445px;   
+    top: 60%;     
+    width: 150px;
+    height: 250px;
+    object-fit: cover;    
+}
+.extra-img4 {
+    position: fixed;
+    right: 220px;   
+    top: 53%;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+      
+}
+.another-img {
+    position: absolute;
+    right: 120px;   
+    top: 32%;    
+    transform: translateY(-50%) rotate(3deg); 
+    width: 130px;
+    height: auto;
+}
+.another-img1 {
+    position: absolute;
+    right: 230px; 
+    top: 30%;
+    transform: translateY(-50%) rotate(-9deg);
+    width: 140px;
+    height: auto;
+}
+
+
+body.about-page {
+    background-image: url("bgpage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+body.interests-page {
+    background-image: url("bgpage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+.home-page {
+    background: url("pexels-jose-rodriguez-ortega-2189823-32751933.png");
+    background-size: cover;
+}
+#toggle {
+    display: none;
+}
+.about-portfolio {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0 80px;
+}
+.about-word {
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 90px;
+    color: black;
+    
+}
+.middle-images {
+    justify-self: center;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.me-word {
+    font-family: "Pinyon Script", cursive;
+    font-size: 200px;
+    color: black;
+    justify-self: end;
+}
+/* CART ND PICS*/
+.click-area {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.cart-img {
+    width: 500px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.cart-img {
+    transition: transform 0.3s ease;
+}
+
+.click-area:hover .cart-img {
+    transform: scale(1.05);
+}
+/* IBABAW NG CART */
+.pics {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    z-index: 3;
+}
+/*IBABAW NG CART*/
+.cart-text {
+    position: absolute;
+    top: 50%;
+    margin-left: -5px;
+    transform: translate(-50%, -50%) translateX(-20px);
+    font-family: "Pinyon Script", cursive;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.1s ease;
+    z-index: 10;
+}
+.cart-text p {
+    color: black;
+}
+.content-images img {
+    position: absolute;
+}
+.content-images {
+    opacity: 0;
+    pointer-events: none;
+}
+.content-images img {
+    transition: 0.3s ease;
+}
+.content-images img:hover {
+    transform: scale(1.3);
+    z-index: 10;
+}
+.cursor {
+    position: fixed;
+    top: 70%;    
+    right: 35%;    
+    width: 100px;
+    z-index: 9999;
+    
+}
+/* hide ABOUT + ME after clicking */
+#toggle:checked ~ .about-portfolio .about-word,
+#toggle:checked ~ .about-portfolio .me-word {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+/* hide pics */
+#toggle:checked ~ .about-portfolio .pics {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.6);
+}
+/* show text */
+#toggle:checked ~ .about-portfolio .cart-text {
+    opacity: 1;
+    color: rgb(255, 255, 255);   
+}
+/* show circle images */
+#toggle:checked ~ .about-portfolio .content-images {
+    opacity: 1;
+}
+/* cart focus */
+#toggle:checked ~ .about-portfolio .cart-img {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+#toggle:checked ~ .about-portfolio .cart-caption {
+    opacity: 1;
+}
+#toggle:checked ~ .about-portfolio .cursor {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+}
+#toggle:checked ~ .about-portfolio .extra-text,
+#toggle:checked ~ .about-portfolio .extra-text-2,
+#toggle:checked ~ .about-portfolio .extra-text-3,
+#toggle:checked ~ .about-portfolio .extra-text-4,
+#toggle:checked ~ .about-portfolio .extra-text-5 {
+    opacity: 1;
+}
+.skills-portfolio .extra-text,
+.skills-portfolio .extra-text6,
+.skills-portfolio .extra-text7,
+.skills-portfolio .extra-text8,
+.skills-portfolio .extra-text9,
+.skills-portfolio .extra-text10,
+.skills-portfolio .extra-text11 {
+    opacity: 1;
+}
+.me { 
+    top: -40%; 
+    left: -50%; 
+}
+.palette { 
+    top: -50%; 
+    left: -73%; 
+}
+.drawing { 
+    top: 50%; 
+    left: 110%; 
+}
+
+.strawberry { 
+     top: 40%;
+     right: 10%; 
+}
+.dog { 
+    top: 105%; 
+    left: -45%; 
+}
+.who { 
+    top: -120%; 
+    right: -23%; 
+}
+
+.sunset { 
+    top: 60%; 
+    left: -65%; 
+}
+
+.groupie { 
+    top: 78%; 
+    right: 5%; 
+}
+
+.receipt { 
+    top: -40%; 
+    left: -5%; 
+} 
+.sisig { 
+    top: 55%; 
+    left: -55%; 
+}
+
+.libra { 
+    top: -50%; 
+    left: 30%; 
+}
+.star {
+    top: 115%; 
+    left: 9%; 
+}
+.watermelon { 
+    top: 118%; 
+    right: -6%; 
+}
+.stars { 
+    top: 105%; 
+    left: -58%; 
+}
+
+.me { 
+    width: 170px;
+    transform: rotate(3deg)
+}
+.palette { 
+    width: 300px; 
+    transform: rotate(-10deg);
+}
+.drawing { 
+    width: 120px;
+ }
+
+.strawberry { 
+    width: 200px;
+    transform: rotate(-15deg); 
+}
+.dog { 
+    width: 170px; 
+}
+.who { 
+    width: 500px;
+    transform: rotate(18deg);
+}
+.star { 
+    width: 350px;
+}
+
+.sunset { 
+    width: 150px;
+ }
+
+.groupie { 
+    width: 125px; 
+}
+
+.receipt { 
+    width: 90px; 
+}
+.sisig { 
+    width: 200px; 
+}
+.libra {
+     width: 120px; 
+     transform: rotate(5deg);
+}
+.watermelon { 
+    width: 105px;
+     transform: rotate(10deg);   
+}
+.stars { 
+    width: 150px; 
+}
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    z-index: 9999;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.2);
+}
+.next-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    z-index: 9999;
+    text-decoration: none;
+    transition: 0.3s ease;
+    
+}
+
+.next-btn:hover {
+    transform: scale(1.2);
+}
+.image-card {
+    transition: transform 0.5s ease;
+}
+
+.image-card:hover {
+    transform: scale(1.3);
+}
+.extra-text {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 12.5px;
+    color: black;
+    position: absolute;
+    opacity: 0;
+    transition: 0.1s ease;
+}
+.extra-text {
+    top: 40%;
+    left: -58%;
+    transform: translateY(-50%);
+}
+.extra-text-2 {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 12.5px;
+    color: black;
+    position: absolute;
+    opacity: 0;
+    transition: 0.1s ease;
+}
+.extra-text-2 {
+    top: 90%;
+    left: -29%;
+    transform: translateY(-50%);
+}
+
+.extra-text-3 {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 12.5px;
+    color: black;
+    position: absolute;
+    opacity: 0;
+    transition: 0.1s ease;
+    text-align: right;
+}
+.extra-text-3 {
+    bottom: -25%;
+    right: -27%;
+}
+.extra-text-4 {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 12.5px;
+    color: black;
+    position: absolute;
+    opacity: 0;
+    transition: 0.1s ease;
+    text-align: right;
+    max-width: 300px;
+}
+.extra-text-4 {
+    top: 110%;
+    right: 3%;
+    transform: translateX(-50%);
+}
+.extra-text-5 {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 12.5px;
+    color: black;
+    position: absolute;
+    opacity: 0;
+    transition: 0.1s ease;
+    text-align: center;
+}
+.extra-text-5 {
+    top: -10%;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.interests-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.row {
+    display: flex;
+    justify-content: center; 
+    gap: 25px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+/* interets images */
+.row img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 15px; 
+
+    background: rgba(255, 255, 255, 0.363); 
+    padding: 8px;
+
+    box-shadow: 
+        0 4px 10px rgba(0,0,0,0.15),  
+        0 2px 4px rgba(0,0,0,0.1);   
+
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.text-row p {
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 10px;
+    width: 150px;     
+    text-align: left;
+    color: rgb(0, 0, 0);  
+    margin: 0;   
+}
+.text-row {
+    display: flex;
+    justify-content: center;  
+    gap: 17px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);  
+}
+.row img:hover {
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.25),
+        0 5px 10px rgba(0,0,0,0.15);
+}
+
+.row:hover p {
+    color: rgb(0, 0, 0);
+    transform: translateY(3px);
+}
+.row:active img {
+    transform: scale(0.95);
+}
+
+.row:active p {
+    color: rgb(0, 0, 0);
+}
+.title2 {
+    text-align: center;
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 15px;
+    margin: 25px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.row,
+.text-row {
+    gap: 25px;
+}
+.skills-page {
+    margin: 0;
+    padding: 0;
+    background: url("bgpage.png");
+    background-size: cover;
+}
+.skills-portfolio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.skillz {
+    position: absolute;
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 55px;
+    color: black;
+    max-width: 300px;
+    text-align: center;
+    top: 5%;
+    left: 35%;
+}
+.skillzz {
+     position: absolute;
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    top: 10.5%;
+    right: 35%;
+}
+
+.skill-text {
+    position: absolute;
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 13px;
+    color: black;
+    max-width: 300px;
+    text-align: center;
+}
+.t5 {
+    bottom: 21%;
+    right: 4.5%;
+}
+.t3 {
+    bottom: 23%;
+    left: 48%;
+}
+.t4 {
+    top: 25%;
+    left: 4%;
+}
+.t2 {
+    top: 21%;
+    left: 32%;
+}
+.t1 {
+    top: 21%;
+    left: 61%;
+}
+.t6 {
+    bottom: 25%;
+    left: 19%;
+}
+.skills-img-row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.skills-img-row img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+.skills-img-row img:hover {
+    transform: scale(1.1);
+}
+.contacts-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url("bgpage.png");
+    background-size: cover;
+    font-family: "Lexend Giga", sans-serif;
+}
+.CONTACT-word{
+    position: absolute;
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 135px;
+}
+.ME-word {
+    position: absolute;
+   font-family: "Pinyon Script", cursive;
+    font-weight: 500;
+    font-size: 380px;
+}
+.CONTACT-word {
+    top: 8%;    
+    left: 5%;   
+}
+.ME-word {
+    top: 10%;
+    right: 8%;
+}
+.contact-portfolio {
+    width: 100%;
+    height: 100vh;
+}
+.contact-info {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  font-family: "Lexend Giga", sans-serif ;
+   transform: translateX(-50%);
+   font-size: 25px;
+    text-align: justify;
+}
+/* links */
+.contact-info a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+  color: rgb(84, 84, 84);
+}
